@@ -250,6 +250,18 @@
             font-weight: 600;
         }
 
+        .arrow-up {
+            color: #dc3545;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
+        .arrow-down {
+            color: #28a745;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+
         .phase-oct-dec {
             background: #fff3cd;
         }
@@ -387,6 +399,7 @@
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 </head>
 <body>
     <div class="container">
@@ -490,7 +503,7 @@
                         <td class="negative">-$202,935</td>
                         <td class="negative">-$9,065</td>
                         <td class="neutral">$0</td>
-                        <td class="negative">$1,167,872</td>
+                        <td class="negative">$1,167,872 <span class="arrow-up">▲</span></td>
                         <td class="neutral">$0</td>
                         <td>Continue business as normal - controlled exposure increase</td>
                     </tr>
@@ -501,7 +514,7 @@
                         <td class="negative">-$202,935</td>
                         <td class="negative">-$7,399</td>
                         <td class="neutral">$0</td>
-                        <td class="negative">$1,175,271</td>
+                        <td class="negative">$1,175,271 <span class="arrow-up">▲</span></td>
                         <td class="neutral">$0</td>
                         <td>Continue business as normal - delivering pending POs</td>
                     </tr>
@@ -512,7 +525,7 @@
                         <td class="negative">-$202,935</td>
                         <td class="negative">-$7,399</td>
                         <td class="neutral">$0</td>
-                        <td class="negative">$1,182,670</td>
+                        <td class="negative">$1,182,670 <span class="arrow-up">▲</span></td>
                         <td class="neutral">$0</td>
                         <td>Continue business as normal - ⚠️ PEAK EXPOSURE REACHED</td>
                     </tr>
@@ -523,7 +536,7 @@
                         <td class="negative">-$251,532</td>
                         <td class="positive">+$42,708</td>
                         <td class="negative">-$25,000</td>
-                        <td class="negative">$1,157,670</td>
+                        <td class="negative">$1,157,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$17,708</td>
                         <td>Pay $25,000 to Polyco</td>
                     </tr>
@@ -534,7 +547,7 @@
                         <td class="negative">-$251,532</td>
                         <td class="positive">+$42,708</td>
                         <td class="negative">-$25,000</td>
-                        <td class="negative">$1,132,670</td>
+                        <td class="negative">$1,132,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$17,708</td>
                         <td>Pay $25,000 to Polyco</td>
                     </tr>
@@ -545,7 +558,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$1,052,670</td>
+                        <td class="negative">$1,052,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -556,7 +569,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$972,670</td>
+                        <td class="negative">$972,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -567,7 +580,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$892,670</td>
+                        <td class="negative">$892,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -578,7 +591,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$812,670</td>
+                        <td class="negative">$812,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -589,7 +602,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$732,670</td>
+                        <td class="negative">$732,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -600,7 +613,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$652,670</td>
+                        <td class="negative">$652,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -611,7 +624,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$572,670</td>
+                        <td class="negative">$572,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -622,7 +635,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$492,670</td>
+                        <td class="negative">$492,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -633,7 +646,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$412,670</td>
+                        <td class="negative">$412,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -644,7 +657,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$332,670</td>
+                        <td class="negative">$332,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -655,7 +668,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$252,670</td>
+                        <td class="negative">$252,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -666,7 +679,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$172,670</td>
+                        <td class="negative">$172,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -677,7 +690,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$92,670</td>
+                        <td class="negative">$92,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -688,7 +701,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$80,000</td>
-                        <td class="negative">$12,670</td>
+                        <td class="negative">$12,670 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$12,023</td>
                         <td>Pay $80,000 to Polyco</td>
                     </tr>
@@ -699,7 +712,7 @@
                         <td class="negative">-$365,317</td>
                         <td class="positive">+$92,023</td>
                         <td class="negative">-$12,670</td>
-                        <td class="positive">$0</td>
+                        <td class="positive">$0 <span class="arrow-down">▼</span></td>
                         <td class="positive">+$79,353</td>
                         <td>✅ FULLY PAID OFF - Partnership Reset!</td>
                     </tr>
@@ -709,52 +722,9 @@
 
         <div class="chart-container" style="margin: 40px 0; padding: 30px; background: #f8f9fa; border-radius: 10px; border-left: 5px solid #5a67d8;">
             <h3 style="color: #2c3e50; margin-bottom: 20px; font-size: 20px;">📉 Exposure Paydown Progress</h3>
-            <canvas id="exposureChart" style="max-height: 400px;"></canvas>
+            <canvas id="exposureChart" style="max-height: 500px;"></canvas>
         </div>
 
-        <div class="notes">
-            <h3>📈 Key Milestones & Guarantees</h3>
-            <ul>
-                <li><strong>Starting Exposure (Oct 2025):</strong> $1,158,807</li>
-                <li><strong>Oct-Dec 2025 (Q4):</strong> Continue business as normal - minimal exposure increase of only $23,863 (2%)</li>
-                <li><strong>Peak Exposure (Dec 2025):</strong> $1,182,670 - this is the maximum, then consistent decline every month</li>
-                <li><strong>Payment Phase Begins:</strong> January 2026 with immediate impact</li>
-                <li><strong>Total Payment Period:</strong> 17 months (Jan 2026 - May 2027)</li>
-                <li><strong>Full Payoff Guaranteed:</strong> May 2027</li>
-            </ul>
-
-            <h3 style="margin-top: 25px;">🏭 Production Capacity Scaling (Demonstrates Growth & Capability)</h3>
-            <ul>
-                <li><strong>Oct 2025:</strong> 5 machines operational (baseline)</li>
-                <li><strong>Nov-Dec 2025:</strong> 6 machines operational (+20% capacity increase)</li>
-                <li><strong>Jan-Feb 2026:</strong> 8 machines operational (+60% vs. baseline)</li>
-                <li><strong>Mar 2026 onwards:</strong> 11 machines operational (+120% vs. baseline - full capacity)</li>
-            </ul>
-
-            <h3 style="margin-top: 25px;">💰 Payment Summary - Clear & Transparent</h3>
-            <ul>
-                <li><strong>No payments:</strong> Oct 2025 - Dec 2025 (3 months) - Continue normal terms, deliver pending POs</li>
-                <li><strong>$25,000/month:</strong> Jan-Feb 2026 (2 months) = $50,000 total</li>
-                <li><strong>$80,000/month:</strong> Mar 2026 - Apr 2027 (14 months) = $1,120,000 total</li>
-                <li><strong>Final payment:</strong> May 2027 = $12,670</li>
-                <li><strong>Total Paid:</strong> $1,182,670 (100% of peak exposure)</li>
-            </ul>
-
-            <h3 style="margin-top: 25px;">✅ Cash Flow Sustainability - EcoFibre Remains Healthy</h3>
-            <ul>
-                <li><strong>Oct-Dec 2025:</strong> All operating cash flow retained for pending PO fulfillment and operations</li>
-                <li><strong>Jan-Feb 2026:</strong> +$17,708/month retained (after $25k payment)</li>
-                <li><strong>Mar 2026 - May 2027:</strong> +$12,023/month retained (after $80k payment)</li>
-                <li><strong>Critical Point:</strong> EcoFibre maintains positive cash flow every single month while systematically paying down exposure - this ensures business stability and payment reliability</li>
-            </ul>
-
-            <h3 style="margin-top: 25px;">🎯 Why This Plan Works for Both Parties</h3>
-            <ul>
-                <li><strong>For Polyco:</strong> Guaranteed payoff timeline, minimal additional exposure (+2%), transparent monthly tracking, stronger supplier partnership</li>
-                <li><strong>For EcoFibre:</strong> Maintains operations, scales capacity, demonstrates financial discipline, clears exposure systematically</li>
-                <li><strong>Mutual Benefit:</strong> Continuing normal terms in Q4 2025 enables smooth transition to aggressive payback starting Q1 2026</li>
-            </ul>
-        </div>
     </div>
 
     <script>
@@ -789,9 +759,47 @@
             }]
         };
 
+        // Calculate monthly paydown amounts
+        const monthlyChange = [];
+        for (let i = 0; i < chartData.datasets[0].data.length; i++) {
+            if (i === 0) {
+                monthlyChange.push(chartData.datasets[0].data[i] - 1158807); // Change from starting exposure
+            } else {
+                monthlyChange.push(chartData.datasets[0].data[i] - chartData.datasets[0].data[i-1]);
+            }
+        }
+
         const config = {
-            type: 'line',
-            data: chartData,
+            type: 'bar',
+            data: {
+                labels: chartData.labels,
+                datasets: [{
+                    label: 'Exposure Balance',
+                    data: chartData.datasets[0].data,
+                    backgroundColor: function(context) {
+                        const value = monthlyChange[context.dataIndex];
+                        // Red for increases, green for decreases
+                        if (value > 0) {
+                            return 'rgba(220, 53, 69, 0.8)';
+                        } else if (value < 0) {
+                            return 'rgba(40, 167, 69, 0.8)';
+                        } else {
+                            return 'rgba(108, 117, 125, 0.8)';
+                        }
+                    },
+                    borderColor: function(context) {
+                        const value = monthlyChange[context.dataIndex];
+                        if (value > 0) {
+                            return '#dc3545';
+                        } else if (value < 0) {
+                            return '#28a745';
+                        } else {
+                            return '#6c757d';
+                        }
+                    },
+                    borderWidth: 1
+                }]
+            },
             options: {
                 responsive: true,
                 maintainAspectRatio: true,
@@ -829,13 +837,53 @@
                                     }).format(context.parsed.y);
                                 }
                                 return label;
+                            },
+                            afterLabel: function(context) {
+                                const change = monthlyChange[context.dataIndex];
+                                if (change !== 0) {
+                                    const changeStr = new Intl.NumberFormat('en-US', {
+                                        style: 'currency',
+                                        currency: 'USD',
+                                        minimumFractionDigits: 0,
+                                        maximumFractionDigits: 0,
+                                        signDisplay: 'always'
+                                    }).format(change);
+                                    return 'Monthly change: ' + changeStr;
+                                }
+                                return '';
                             }
                         }
+                    },
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        formatter: function(value, context) {
+                            const change = monthlyChange[context.dataIndex];
+                            if (change === 0) return '';
+                            return new Intl.NumberFormat('en-US', {
+                                style: 'currency',
+                                currency: 'USD',
+                                minimumFractionDigits: 0,
+                                maximumFractionDigits: 0,
+                                signDisplay: 'always'
+                            }).format(change);
+                        },
+                        color: function(context) {
+                            const value = monthlyChange[context.dataIndex];
+                            return value > 0 ? '#dc3545' : '#28a745';
+                        },
+                        font: {
+                            size: 10,
+                            weight: 'bold'
+                        },
+                        offset: 8,
+                        display: true
                     }
                 },
                 scales: {
                     y: {
                         beginAtZero: true,
+                        max: 1400000, // Increased to provide more space for labels
                         grid: {
                             color: 'rgba(0, 0, 0, 0.05)',
                             drawBorder: false
@@ -889,50 +937,9 @@
             }
         };
 
-        // Add annotations for key milestones
-        config.options.plugins.annotation = {
-            annotations: {
-                peakLine: {
-                    type: 'line',
-                    xMin: 2,
-                    xMax: 2,
-                    borderColor: '#dc3545',
-                    borderWidth: 2,
-                    borderDash: [5, 5],
-                    label: {
-                        enabled: true,
-                        content: 'Peak Exposure',
-                        position: 'start',
-                        backgroundColor: '#dc3545',
-                        color: 'white',
-                        padding: 4,
-                        font: {
-                            size: 11
-                        }
-                    }
-                },
-                paymentStartLine: {
-                    type: 'line',
-                    xMin: 3,
-                    xMax: 3,
-                    borderColor: '#28a745',
-                    borderWidth: 2,
-                    borderDash: [5, 5],
-                    label: {
-                        enabled: true,
-                        content: 'Payments Begin',
-                        position: 'start',
-                        backgroundColor: '#28a745',
-                        color: 'white',
-                        padding: 4,
-                        font: {
-                            size: 11
-                        }
-                    }
-                }
-            }
-        };
-
+        // Register the plugin
+        Chart.register(ChartDataLabels);
+        
         const exposureChart = new Chart(ctx, config);
     </script>
 </body>
